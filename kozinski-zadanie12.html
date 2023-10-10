@@ -1,0 +1,33 @@
+<div style="color:green;font-size:49px;">
+<script language="JavaScript">
+var D1_koz=prompt("Pierwszy dzień=","");
+var G1_koz=prompt("Pierwsza godzina","");
+var D2_koz=prompt("Drugi dzień=","");
+var G2_koz=prompt("Druga godzina","");
+var wynik;
+var sekundy;
+var wynikdzien;
+var a=parseFloat(D1_koz);
+var b=parseFloat(D2_koz);
+var c=parseFloat(G1_koz);
+var d=parseFloat(G2_koz);
+wynikdzien=(a-b)*86400;
+wynikgodz=(G2_koz-G1_koz) * 3600;
+
+if (wynikgodz < 0)
+{
+wynikgodz = wynikgodz * -1;
+}
+
+sekundy = wynikdzien-wynikgodz;
+document.write("D1 = " +a+ ".<br>");
+document.write("G1 = " +c+ ".<br>");
+document.write("D2 = " +b+ ".<br>");
+document.write("G2 = " +d+ ".<br>");
+document.write("ilość sekund = " +sekundy+ ".");
+
+</script>
+</div>
+
+</body>
+</html>

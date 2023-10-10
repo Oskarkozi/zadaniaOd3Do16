@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Koziński 2P</title>
+
+<script language="JavaScript">
+function WinOpen_kozinski_1()
+{
+window.open("grafika1.html","okienkoa","toolbar=no,directories=no,menubar=no,height=300,width=200,left=00");
+}
+function WinOpen_kozinski_2()
+{
+window.open("grafika2.html","okienkob","toolbar=no,directories=no,menubar=no,height=300,width=200,left=200");
+}
+function WinOpen_kozinski_3()
+{
+window.open("grafika3.html","okienkoc","toolbar=no,directories=no,menubar=no,height=300,width=200,left=400");
+}
+function WinOpen_kozinski_4()
+{
+window.open("grafika4.html","okienkof","toolbar=no,directories=no,menubar=no,height=300,width=200,left=600");
+}
+function okno_zamknij_kozinski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<p align="center" style="color: red; font-size: 1cm " >wkonał: Oskar Kozinski mój numer w dzieniku 15 czyli mam układ [(15)mod 4=3] układ 4</p>
+<form>
+<div style = "width: 300px;
+  margin: auto; ">
+<input type="button" name="grafika1" value="grafika1" onclick="WinOpen_kozinski_1(' ')">
+<input type="button" name="grafika2" value="grafika2" onclick="WinOpen_kozinski_2(' ')">
+<input type="button" name="grafika3" value="grafika3" onclick="WinOpen_kozinski_3(' ')">
+<input type="button" name="grafika4" value="grafika4" onclick="WinOpen_kozinski_4(' ')">
+</div>
+<div style = " margin: auto; width:10%; height: -100px">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kozinski()"/>
+</div>
+</form>
+</body>
+</html>

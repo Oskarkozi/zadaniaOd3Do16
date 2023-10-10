@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function okno_zamknij_siejka() {
+        window.close();
+      }
+      21;
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea name="siejka" cols="80" rows="20" readonly>
+ 
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>zadanie11</title>
+        <meta charset="utf-8" />
+      </head>
+      <body>
+        <div style="color: rgb(21, 19, 108); font-size: 50px">
+          <script language="JavaScript">
+            var m_koz1 = prompt("Podaj pierwszą liczbę= ", "");
+            var m_koz2 = prompt("Podaj drugą liczbę= ", "");
+    
+            var drugi = parseInt(m_koz2);
+            var pierwszy = parseInt(m_koz1);
+            drugi = pierwszy * 2;
+    
+            document.write("Wczytane liczby:<br>");
+            document.write("A=" + pierwszy + "<br>");
+            document.write("B=" + drugi + "<br>");
+    
+            document.write(
+              "(" +
+                pierwszy +
+                "+" +
+                drugi +
+                ")^3= " +
+                pierwszy +
+                "^3 + 3*(" +
+                pierwszy +
+                "^2) * " +
+                drugi +
+                " + 3*(" +
+                pierwszy +
+                ") * (" +
+                drugi +
+                "^2) + " +
+                drugi +
+                "^3 ="
+            );
+    
+            var krok1 = Math.pow(pierwszy, 3);
+            var krok2 = 3 * (Math.pow(pierwszy, 2) * drugi);
+            var krok3 = 3 * (pierwszy * Math.pow(drugi, 2));
+            var krok4 = Math.pow(drugi, 3);
+    
+            document.write(
+              " " + krok1 + " + " + krok2 + " + " + krok3 + " + " + krok4 + " = "
+            );
+            var wynik = krok1 + krok2 + krok3 + krok4;
+            document.write(wynik);
+          </script>
+        </div>
+      </body>
+    </html>
+    
+</textarea
+      >
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()" />
+    <script type="text/javascript"></script>
+  </body>
+</html>
